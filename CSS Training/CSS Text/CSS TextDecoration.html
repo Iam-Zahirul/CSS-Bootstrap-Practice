@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Decoration</title>
+
+    <style>
+        .Box p:first-child{
+            color: teal;
+        }
+        .Box p::first-letter
+        {
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="Box">
+    <p style="text-decoration: underline;">This is a underline.</p>
+    <p style="text-decoration: line-through;">This is a line-through.</p>
+    <p style="text-decoration:overline ;">This is a overline.</p>
+   </div>
+
+</body>
+
+</html>

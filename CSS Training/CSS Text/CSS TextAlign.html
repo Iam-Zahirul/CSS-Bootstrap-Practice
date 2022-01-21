@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Alignment</title>
+    <style>
+        .Boundary {
+            background-color: mediumaquamarine;
+            padding: 20px;
+        }
+
+        .Boundary h1::before {
+            content: "Read - ";
+            color: purple;
+            background-color: royalblue;
+            border-radius: 20px;
+            padding: 5px;
+            box-sizing: border-box;
+            font-size: 30px;
+            box-shadow: slategray;
+        }
+
+        .Container p::before {
+            content:"Come - ";
+            background-color: springgreen;
+            border-radius: 20px;
+            padding: 3px;
+        }
+
+        .Boundary h1:nth-child(1) {
+            background-color: mediumorchid;
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        .Boundary h1:nth-child(2) {
+            background-color: mediumslateblue;
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        .Boundary h1:last-child {
+            background-color: powderblue;
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        .Box {
+            background-color: aquamarine;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .Box p::after {
+            content: "- Writte";
+            color: slategray;
+            background-color: springgreen;
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        .Box p:nth-child(1) {
+            text-align: left;
+            background-color: blueviolet;
+            border-radius: 10px;
+            padding: 5px;
+            color: lightcoral;
+        }
+
+        .Box p:nth-child(2) {
+            text-align: center;
+            background-color: indigo;
+            border-radius: 20px;
+            padding: 5px;
+            color: lightgreen;
+        }
+
+        .Box p:nth-child(3) {
+            text-align: right;
+            background-color: khaki;
+            border-radius: 30px;
+            padding: 5px;
+            color: maroon;
+        }
+        picture img{
+            width: 20px;
+        }
+        picture{
+            width: 100%;
+            display: block;
+        }
+        .XOX img:nth-child(1)
+        {
+           float: left;
+            display: block;
+        }
+
+        .XOX img:nth-child(2)
+        {
+            float: right;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+        <p style="text-align: left;">The text is left align.</p>
+        <p style="text-align: center;">The text is center align.</p>
+        <p style="text-align: right;">The text is right align.</p>
+    </div>
+    <hr>
+    <div class="Boundary">
+        <h1 style="text-align:left ;">The text is left align.</h1>
+        <h1 style="text-align:center ;">The text is center align.</h1>
+        <h1 style="text-align:right ;">The text is right align.</h1>
+    </div>
+    <hr>
+    <div class="Box">
+        <p>The text is left align.</p>
+        <p>The text is center align.</p>
+        <p>The text is right align.</p>
+    </div>
+    <hr>
+    <picture class="XOX">
+        <img src="Star.png" alt="" srcset="">
+        <img src="Star.png" alt="" srcset="">
+    </picture>
+</body>
+
+</html>

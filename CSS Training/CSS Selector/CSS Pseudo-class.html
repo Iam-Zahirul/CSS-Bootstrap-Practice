@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+
+    <style>
+        /* unvisited link */
+        a:link {
+            color: red;
+        }
+
+        /* visited link */
+        a:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        a:active {
+            color: blue;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        div .Box {
+            margin-left: 10px;
+            width: 250px;
+            height: 300px;
+            padding: 10px;
+            text-align: justify;
+            background-color: mediumaquamarine;
+            -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+            box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        }
+
+        div h1 {
+            text-align: center;
+            text-shadow: 2px 2px 2px #CE5937;
+        }
+
+        div .Box:hover {
+            background-color: mediumorchid;
+        }
+
+        .X p {
+            display: none;
+        }
+
+        .X:hover p {
+            display: block;
+            background-color: mediumseagreen;
+        }
+
+        .Form input:checked {
+            width: 100px;
+            height: 100px;
+        }
+
+        .Form1 input[type=text]:enabled {
+            background: #ffff00;
+        }
+
+        .Form1 input[type=text]:disabled {
+            background: red;
+        }
+
+        p:empty {
+            width: 100px;
+            height: 20px;
+            background: #ff0000;
+        }
+
+        h3:empty {
+            width: 100px;
+            height: 20px;
+            background: #ff0000;
+        }
+
+        input:focus {
+            background-color: mediumseagreen;
+        }
+
+        input:in-range {
+            border: 2px solid yellow;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+        }
+
+        .Y p {
+            color: #000000;
+        }
+
+        .Y:not(p) {
+            color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="">Click Here</a>
+    <hr>
+    <div>
+        <div class="Box">
+            <h1>Hi ! This is Smith</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias commodi nulla optio dolor cumque
+                aliquam
+                quam soluta velit, explicabo at sunt atque, a cupiditate beatae facilis et reprehenderit quasi quidem
+                obcaecati accusantium neque, corporis illo! Odit perspiciatis commodi debitis distinctio veritatis ipsam
+                minima rerum numquam eum quae, consectetur atque!</p>
+        </div>
+
+
+        <div class="Box">
+            <h1>Hi ! This is Smith</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias commodi nulla optio dolor cumque
+                aliquam
+                quam soluta velit, explicabo at sunt atque, a cupiditate beatae facilis et reprehenderit quasi quidem
+                obcaecati accusantium neque, corporis illo! Odit perspiciatis commodi debitis distinctio veritatis ipsam
+                minima rerum numquam eum quae, consectetur atque!</p>
+        </div>
+
+        <div class="Box">
+            <h1>Hi ! This is Smith</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias commodi nulla optio dolor cumque
+                aliquam
+                quam soluta velit, explicabo at sunt atque, a cupiditate beatae facilis et reprehenderit quasi quidem
+                obcaecati accusantium neque, corporis illo! Odit perspiciatis commodi debitis distinctio veritatis ipsam
+                minima rerum numquam eum quae, consectetur atque!</p>
+        </div>
+
+    </div>
+    <br>
+    <hr>
+    <div class="X">
+        Hello Ask Me Who Am ?
+        <p>I am Zahirul Islam</p>
+    </div>
+
+    <hr>
+    <div class="Form">
+        <form>
+            <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+            <input type="radio" value="female" name="gender"> Female<br>
+            <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+            <input type="checkbox" value="Car"> I have a car
+        </form>
+    </div>
+    <hr>
+    <div class="Form1">
+        <form>
+            First name: <input type="text" value="Mickey"><br>
+            Last name: <input type="text" value="Mouse"><br>
+            Country: <input type="text" disabled="disabled" value="Disneyland">
+        </form>
+    </div>
+    <hr>
+    <form action="">
+        First name: <input type="text" name="firstname"><br>
+        Last name: <input type="text" name="lastname">
+        <input type="number" name="" id="" min="1" max="10">
+        <input type="email" value="supportEmail">
+    </form>
+    <p></p>
+    <p>A paragraph.</p>
+    <p>Another paragraph.</p>
+    <h3></h3>
+    <div class="Y">
+        <h1>This is a heading</h1>
+
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+
+        <div>This is some text in a div element.</div>
+
+        <a href="https://www.w3schools.com" target="_blank">Link to W3Schools!</a>
+
+    </div>
+</body>
+
+</html>

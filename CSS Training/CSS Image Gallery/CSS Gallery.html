@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image Gallery</title>
+    <style>
+        .Container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .Container .Pic img {
+            border: 5px solid blue;
+            border-radius: 20px;
+            -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+            box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(255, 255, 255, 0);
+            background: #1C6EA4;
+        }
+
+        body#tinymce {
+            background: #E3E3E3
+        }
+
+        .Container .Pic caption {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Container">
+        <div class="Pic">
+            <img src="ZAHIRUL.jpeg" alt="" srcset="" width="300px" height="300px">
+            <caption><cite>Figure :</cite> Zahirul Islam</caption>
+        </div>
+        <div class="Pic">
+            <img src="ZAHIRUL.jpeg" alt="" srcset="" width="300px" height="300px">
+            <caption><cite>Figure :</cite> Zahirul Islam</caption>
+        </div>
+        <div class="Pic">
+            <img src="ZAHIRUL.jpeg" alt="" srcset="" width="300px" height="300px">
+            <caption><cite>Figure :</cite> Zahirul Islam</caption>
+        </div>
+        <div class="Pic">
+            <img src="ZAHIRUL.jpeg" alt="" srcset="" width="300px" height="300px">
+            <caption><cite>Figure :</cite> Zahirul Islam</caption>
+        </div>
+        <div class="Pic">
+            <img src="ZAHIRUL.jpeg" alt="" srcset="" width="300px" height="300px">
+            <caption><cite>Figure :</cite> Zahirul Islam</caption>
+        </div>
+        <div class="Pic">
+            <img src="ZAHIRUL.jpeg" alt="" srcset="" width="300px" height="300px">
+            <caption><cite>Figure :</cite> Zahirul Islam</caption>
+        </div>
+    </div>
+</body>
+
+</html>

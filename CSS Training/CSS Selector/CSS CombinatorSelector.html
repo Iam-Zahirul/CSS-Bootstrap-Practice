@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Combinator Selector</title>
+    <style>
+        /*--------Descendant Selector---------------*/
+        div p {
+            color: deeppink;
+            text-align: center;
+        }
+
+        div p span {
+            background-color: gold;
+            border-radius: 20px;
+            padding: 2px;
+        }
+
+        /*-------------Child Selector------------------------------*/
+        div>p {
+            background-color: grey;
+        }
+
+        div>p>q {
+            background-color: gold;
+            border-radius: 20px;
+            padding: 2px;
+        }
+
+        /*------------ Adjacent Selector/Immediate Next ----------------*/
+        div+p {
+            background-color: indigo;
+        }
+        div+h2{
+            background-color: lightsalmon;
+        }
+        /*---------Sibling Selector---------------*/
+        div ~ p{
+            background-color: lightseagreen;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!---------------------------------->
+    <div>
+        <p><span>This</span> is a <q> text.</q></p>
+        <p><span>This</span> is a <q> text.</q></p>
+        <p><span>This</span> is a <q>text.</q></p>
+    </div>
+    <p>This is a text.</p>
+    <p>This is a text.</p>
+    <p>This is a text.</p>
+
+    <!--------------------------------->
+    <div>
+        <h1>This is a heading</h1>
+        <h1>This is a heading</h1>
+    </div>
+    <h2>This is another heading</h2>
+
+
+
+</body>
+
+</html>

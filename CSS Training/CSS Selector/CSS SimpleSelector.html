@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Simple Selector</title>
+    <style>
+        /*-------------Universal Selector-----------------------*/
+        * {
+            background-color: darkcyan;
+        }
+
+        /*---------------Class Selector --------------*/
+        .Box {
+            text-align: center;
+            background-color: bisque;
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        /*------------------Id Selector--------------*/
+        #Box {
+            text-align: right;
+            background-color: crimson;
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        /*------------------Element Class Selector ----------------*/
+        p.Bound {
+            text-align: center;
+            background-color: darkorange;
+            border-radius: 20px;
+        }
+
+        p.Bound::first-letter {
+            color: deeppink;
+            font-size: 20px;
+        }
+
+        /*-------------------Group Selector ------------------*/
+        h1,
+        h2,
+        div {
+            color: darkmagenta;
+            background-color: darkgreen;
+            border-radius: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="Box">This is a class selector.</p>
+    <p id="Box">This is a id selector.</p>
+    <p class="Bound">This is a element class</p>
+    <h1>This is a heading <q>Group Selector</q></h1>
+    <h2>This is a heading <q>Group Selector</q></h2>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat porro quis voluptate nobis nemo debitis,
+            deserunt vero dicta. Aperiam, enim.</p>
+    </div>
+
+</body>
+
+</html>
